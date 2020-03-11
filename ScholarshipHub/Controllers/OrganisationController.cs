@@ -135,7 +135,7 @@ namespace ScholarshipHub.Controllers
             }
             catch
             {
-                TempData["error"] = "File path  is Blank!";
+                TempData["error"] = "File  path  is Blank!";
                 return RedirectToAction("Attachment");
             }
 

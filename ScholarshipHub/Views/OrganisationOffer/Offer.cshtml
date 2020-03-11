@@ -64,7 +64,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.startdate, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    <input type="date" name="startdate" required />
+                    <input type="date" name="startdate" required min="2020-03-10" />
                     @Html.ValidationMessageFor(model => model.startdate, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -72,7 +72,7 @@
             <div class="form-group">
                 @Html.LabelFor(model => model.deadline, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    <input type="date" name="deadline" required />
+                    <input type="date" name="deadline" required min="2020-03-11"/>
                     @Html.ValidationMessageFor(model => model.deadline, "", new { @class = "text-danger" })
                 </div>
             </div>

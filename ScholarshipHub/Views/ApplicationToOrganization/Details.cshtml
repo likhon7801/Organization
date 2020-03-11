@@ -54,7 +54,7 @@
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.ImagePath)
+                <img src="@Url.Content(Model.ImagePath)" width="300" height="300" />
             </dd>
     
             <dt>
@@ -62,7 +62,7 @@
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.CVPath)
+                <a href="/Media/Files/@Html.DisplayFor(model => model.CVPath)">Student Path</a>
             </dd>
     
             <dt>
